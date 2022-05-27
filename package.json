@@ -4,10 +4,9 @@
   "description": "Prtoject weather forecast",
   "main": "weather.js",
   "bin": {
-    "weather":"weather.js"
+    "weather": "weather.js"
   },
- "type": "module",
-
+  "type": "module",
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -29,6 +28,8 @@
     "email": "brynzav2@gmail.com"
   },
   "dependencies": {
-    "axios": "^0.27.2"
+    "axios": "^0.27.2",
+    "chalk": "^5.0.1",
+    "dedent-js": "^1.0.1"
   }
 }

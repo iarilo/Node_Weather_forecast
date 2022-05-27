@@ -1,10 +1,12 @@
-/* #!/usr/bin/env node
+#!/usr/bin/env node
 import { getArgs } from "./helpers/args.js"
+import { printHelp } from "./services/log.service.js";
+
  const initCLI = () => {
  const args = getArgs(process.argv);
-  console.log('Args CLT',args);
+  //console.log('Args CLT',args);
  if (args.h) {
-   //Выводим help
+    printHelp();
  }
   if (args.s) {
     //Сохранить город
@@ -14,7 +16,7 @@ import { getArgs } from "./helpers/args.js"
   }
   // вывести погоду
  };
- initCLI();  */
+initCLI(); 
 
 
 
@@ -24,23 +26,7 @@ import { getArgs } from "./helpers/args.js"
 
 
 
-import { getArgs } from './helpers/args.js';
-const initCLI = () => {
-const arr = getArgs(process.argv);
-console.log('ARR',arr);
- if (arr.h) {
-   //хэлп
- };
-  if (arr.s) {
-   //город
-  };
-  if (arr.t) {
-   //токен
-  };
-  // Погода
 
-}
-initCLI();
 
 
 
