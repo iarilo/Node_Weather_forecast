@@ -2,8 +2,12 @@
   "name": "weather-forecast",
   "version": "1.0.0",
   "description": "Prtoject weather forecast",
-  "main": "index.js",
-  "bin": "index.js",
+  "main": "weather.js",
+  "bin": {
+    "weather":"weather.js"
+  },
+ "type": "module",
+
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,7 +17,7 @@
     "weather",
     "forecast"
   ],
-  "author": "\"Brynza Vitalii \"",
+  "author": "Brynza Vitalii ",
   "license": "ISC",
   "homepage": "htts://purpleschool.ru",
   "repository": {
