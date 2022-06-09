@@ -1,4 +1,4 @@
- import chalk from "chalk";
+  import chalk from "chalk";
  import dedent from "dedent-js";
 
 
@@ -20,12 +20,17 @@ console.log(
   `
  );
 };
-export { printError,printSuccess,printHelp};
+const printWeather = (res, icon)=> {
+  console.log(dedent`${chalk.bgYellow('Погода')}
+  Погода в городе: ${res.name}
+  ${icon} ${res.weather[0].description}
+  Температура: ${res.main.temp} (По ощющению: ${res.main.feels_like})
+  Влажность: ${res.main.humidity}%
+  Скорость ветра: ${res.wind.speed}  
+  `);
+};
 
-
-
-
-
+export { printError, printSuccess, printHelp, printWeather };  
 
 
 
